@@ -1,10 +1,6 @@
 // JS console check
 // console.log('JS ok!');
 
-// Costante del prezzo base del biglietto di viaggio
-const TicketBasePrice = 0.21;
-console.log(TicketBasePrice);
-
 // Prompt richiesta dati
 const Km = prompt('Benvenuto nel servizio di calcolo prezzo per i biglietti delle principali compagnie ferroviarie. Inserisci il numero di kilometri che desideri percorrere');
 if (isNaN(Km)) {
@@ -17,4 +13,24 @@ if (isNaN(Km)) {
         alert('Non hai inserito un numero! Ricarica la pagina e riprova');
     }
     else console.log(Age);
+
+    // Costante del prezzo base del biglietto
+    const TicketBasePrice = 0.21 * Km;
+    console.log(TicketBasePrice);
+
+    // Sconto età
+    switch (Age < 18 || Age > 64) {
+        case 1((Age) < 18);
+            let TicketPrice = TicketBasePrice * 20 / 100;
+            console.log(TicketPrice);
+            break;
+        case 2((Age) > 64)
+        let TicketPrice = TicketBasePrice * 40 / 100;
+            console.log(TicketPrice);
+
+        // Prezzo finale
+        default {
+            console.log(TicketBasePrice)
+        }
+    }
 }

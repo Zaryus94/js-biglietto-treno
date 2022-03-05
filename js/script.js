@@ -19,18 +19,14 @@ if (isNaN(Km)) {
     console.log(TicketBasePrice);
 
     // Sconto età
-    switch (Age < 18 || Age > 64) {
-        case 1((Age) < 18);
-            let TicketPrice = TicketBasePrice * 20 / 100;
-            console.log(TicketPrice);
-            break;
-        case 2((Age) > 64)
+    if ((Age) < 18) {
+        let TicketPrice = TicketBasePrice * 20 / 100;
+        console.log(TicketPrice);
+    } if ((Age) > 64) {
         let TicketPrice = TicketBasePrice * 40 / 100;
-            console.log(TicketPrice);
-
-        // Prezzo finale
-        default {
-            console.log(TicketBasePrice)
-        }
+        console.log(TicketPrice);
+    }
+    else {
+        console.log(TicketBasePrice)
     }
 }

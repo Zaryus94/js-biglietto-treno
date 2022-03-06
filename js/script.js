@@ -14,19 +14,28 @@ if (isNaN(Km)) {
     }
     else console.log(Age);
 
-    // Costante del prezzo base del biglietto
-    const TicketBasePrice = 0.21 * Km;
-    console.log(TicketBasePrice);
+    // Prezzo per chilometraggio
+    const Regular = 0.21 * Km;
+    console.log(Regular);
 
-    // Sconto età
+    // Sconto minori
     if ((Age) < 18) {
-        let TicketPrice = TicketBasePrice * 20 / 100;
-        console.log(TicketBasePrice - TicketPrice);
+        document.write("<h3>IL PREZZO DEL TUO BIGLIETTO</h3>");
+        const Price = Regular * 20 / 100;
+        const Discounted = Regular - Price;
+        console.log(Discounted);
+        document.write(Discounted.toFixed(2));
+        // Sconto senior
     } else if ((Age) > 64) {
-        let TicketPrice = TicketBasePrice * 20 / 100;
-        console.log(TicketBasePrice - TicketPrice);
+        document.write("<h3>IL PREZZO DEL TUO BIGLIETTO</h3>");
+        const Price = Regular * 40 / 100;
+        const Discounted = Regular - Price;
+        console.log(Discounted);
+        document.write(Discounted.toFixed(2));
+        // Biglietto regolare
     } else {
-        let TicketPrice = 0.21 * Km;
-        console.log(TicketPrice)
+        const Regular = 0.21 * Km;
+        document.write("<h3>IL PREZZO DEL TUO BIGLIETTO</h3>");
+        document.write(Regular.toFixed(2));
     }
 }
